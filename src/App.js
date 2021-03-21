@@ -76,7 +76,7 @@ export default function App() {
             {questions[currentQuestion].answerOptions.map(
               (answerOption, index) => (
                 <button
-                  key={answerOption}
+                  key={`${index}`}
                   onClick={() =>
                     handleAnswerButtonClick(answerOption.isCorrect)
                   }
